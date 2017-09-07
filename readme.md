@@ -41,7 +41,7 @@ Take a moment to discuss with your team members why this is something that a cli
 Once you get it working, style it up, yo!
 
 ## Hard Mode:
-See how many of these you can implement in the given time. Remember to test when applying a feature and make sure your 
+See how many of these you can implement in the given time. Remember to test when applying a feature.
 
 - disallow two users to submit the same guess at the same time
 - disallow any guess to be entered more than once
