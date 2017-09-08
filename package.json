@@ -1,0 +1,25 @@
+{
+  "name": "Random-Number-Guess",
+  "version": "1.0.0",
+  "description": "Start this group project off with the Quad expectation setting project we did last week. You can refer to [last week's project](https://github.com/PrimeAcademy/object-group-bonus-calculator) for reference. You have a new group, so these expectations might be different. Your needs might change week to week.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharaseaman/Random-Number-Guess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharaseaman/Random-Number-Guess/issues"
+  },
+  "homepage": "https://github.com/sharaseaman/Random-Number-Guess#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
