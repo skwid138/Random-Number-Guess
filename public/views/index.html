@@ -17,19 +17,20 @@
     <main>
       <section id=setUpMode>
         <h3>Pick your poison</h2>
-        <button id="easyButton">Easy</button>
-        <button id="medButton">Medium</button>
-        <button id="hardButton">Hard</button>
+        <button data-number="10" id="easyButton">Easy</button>
+        <button data-number="25" id="medButton">Medium</button>
+        <button data-number="50" id="hardButton">Hard</button>
       </section> 
       <section id=playMode>
           <p>Player One:</p>
-          <input type=number placeholder="enter number" ></input>
+          <input id=p1Input type=number placeholder="enter number" ></input>
+
           <p>Player Two:</p>
-          <input type=number placeholder="enter number" ></input>
+          <input id=p2Input type=number placeholder="enter number" ></input>
           <p>Player Three:</p>
-          <input type=number placeholder="enter number" ></input>
+          <input id=p3Input type=number placeholder="enter number" ></input>
           <p>Player Four:</p>
-          <input type=number placeholder="enter number" ></input>
+          <input id=p4Input type=number placeholder="enter number" ></input>
           <div>
               <br>
              <button id="submitButton">Guess</button>
