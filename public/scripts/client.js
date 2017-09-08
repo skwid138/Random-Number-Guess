@@ -19,10 +19,12 @@ function setupMode(){
     var objectToSend = {
         mode: $diffNumber
     };
+    //console.log(objectToSend);
+    
     $.ajax({
         method: 'POST',
         url: '/difficulty',
-        data: {objectToSend},
+        data: objectToSend,
         success: function(res){
             console.log('SetupMode from server:', res);
             $('#playMode').show();
