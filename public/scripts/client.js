@@ -2,20 +2,32 @@ console.log('JS working');
 
 $(document).ready(onReady);
 
+
+
 function onReady(){
-    console.log('doc is ready, browser console');
-    message();
+    //Event listeners
+    $('.modeButton').on('click', setupMode );
+    $('#submitButton').on('click',  );
+    $('#reset').on('click',  );
+    $('#playMode').hide();
 }
 
-function message(){
-    console.log('sending info back');
+function setupMode(){
+    var $diffNumber = $(this).data('number');
+    $diffNumber = Number($diffNumber);
+    console.log('Its working ->', $diffNumber);
+    var objectToSend = {
+        mode: $diffNumber
+    };
     $.ajax({
-        method: 'GET',
-        url: '/fakeName',
-        success: function (response){
-            console.log('success is working', response);
-            
-        }        
+        method: 'POST',
+        url: '/difficulty',
+        data: {objectToSend},
+        success: function(res){
+            console.log('SetupMode from server:', res);
+            $('#playMode').show();
+            $('#setUpMode').toggle();        }
+                
 
     });
     

@@ -20,8 +20,8 @@ app.get('/', function (req, res){
     //or you could use this! ---> res.sendFile(path.resolve('./public/views/index.html'));
 });
 
-app.get('/fakeName', function (req, res){
-   
-    res.send('we set up fakeName');
+app.post('/difficulty', function (req, res){
+    console.log('Server is working!');
+    res.sendStatus(200);
     //or you could use this! ---> res.sendFile(path.resolve('./public/views/index.html'));
 });
