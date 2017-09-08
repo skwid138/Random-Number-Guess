@@ -19,3 +19,9 @@ app.get('/', function (req, res){
     res.sendFile(path.join(__dirname, './public/views/index.html'));
     //or you could use this! ---> res.sendFile(path.resolve('./public/views/index.html'));
 });
+
+app.get('/fakeName', function (req, res){
+   
+    res.send('we set up fakeName');
+    //or you could use this! ---> res.sendFile(path.resolve('./public/views/index.html'));
+});
